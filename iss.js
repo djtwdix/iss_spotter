@@ -29,8 +29,8 @@ const fetchLocation = (IP, callback) => {
       callback(Error(msg), null);
       return;
     }
-      const location = JSON.parse(data)
-      callback(null, {'latitude': location.latitude, 'longitude': location.longitude});
+      const {latitude, longitude} = JSON.parse(data)
+      callback(null, {latitude, longitude});
   });
 };
 

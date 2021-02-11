@@ -1,7 +1,7 @@
 const { fetchIP, fetchLocation } = require("./iss");
 
 //IP fetch test
-/* fetchIP((err, IP) => {
+fetchIP((err, IP) => {
   if (err) {
     console.log("error: ", err)
   } else {
@@ -15,4 +15,4 @@ fetchLocation('174.118.201.150', (err, location) => {
   } else {
     console.log("Coordinates: ", location);
   }
-}) */
+})
